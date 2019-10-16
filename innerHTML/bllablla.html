@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+.hidden {
+    display: none;
+    }
+</style>
+</head>
+<body>
+
+<button onclick="myFunction()">Try it</button>
+
+<form class="hidden">
+        <p>Username:</p>
+        <input type="text">
+        <p>Comment:</p>
+        <textarea rows="6" cols="45"></textarea>
+        <br>
+    <button>Submit</button>
+    </form>
+
+<script>
+
+function myFunction() {
+  var x = document.getElementsByClassName("hidden");
+  if (x.style.display === "none") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+</body>
+</html>

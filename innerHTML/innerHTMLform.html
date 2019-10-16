@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>innerHTMLform</title>
+
+        <style type="text/css">
+        .hidden {
+            display: none;
+        }
+        </style>
+
+    </head>
+    <body>
+        <button>Click to show the form</button>
+        <form class="hidden">
+            <p>Username:</p>
+            <input type="text">
+            <p>Comment:</p>
+            <textarea rows="6" cols="45"></textarea>
+            <br>
+        <button>Submit</button>
+        </form>
+
+        <script type="text/javascript">
+        
+        var button = document.getElementsByClassName("hidden");
+    
+        button.addEventListener("click", function(){
+        document.classList.toggle("hidden");
+        });
+        </script>
+
+    </body>
+</html>
